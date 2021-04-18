@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("img/bg-profile-card.png") fixed no-repeat;
+}
+
+
+.container {
+    position: absolute;
+    width: 400px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0, 0.20);
+
+}
+
+.imgBox {
+    width: 170px;
+    height: 170px;
+    border: 1px solid #00ccff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1, h3, p {
+    color: lightgray;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 25px
+}
+
+p {
+    padding: 15px 70px;
+}
+
+.btns {
+    margin: 20px;
+}
+
+.message, .following {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.message {
+    
+    background-color: #00ccff;
+    color: #000;
+}
+
+.following {
+    text-decoration: none;
+    border: 1px solid #00ccff;
+    color: #00ccff;
+    transition: 0.5s;
+}
+
+.following:hover {
+    background-color: #00ccff;
+    color: #000;
+}
+
+.skill {
+    position: absolute;
+    bottom: 0;
+    background; rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+}
+
+.skill a {
+    text-decoration: none;
+    color: lightgray;
+    border: 1px solid lightgray;
+    margin: 5px;
+    padding: 2px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.skill a:hover {
+    background-color: #ffce00;
+    color: #000;
+    border: none;
+}
+
+.pro {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 60px;
+    background-color: #ffde00;
+    padding: 5px 0;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 700;
+}
